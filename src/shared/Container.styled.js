@@ -5,7 +5,7 @@ export const ContainerStyled = styled.div`
   background-color: #f0e5e4;
   padding: 50px 0;
 `;
-// export default ContainerStyled;
+
 export const Button = styled.button`
   background-color: #ffe;
   width: 120px;

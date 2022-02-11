@@ -1,32 +1,22 @@
-import React from "react";
-import Statistics from "../../components/Statistics/Statistics";
-import { Li } from "../../shared/Container.styled";
-class FeedbackOptions extends React.Component {
-  render() {
-    const { good, neutral, bad, total, positivePercentage, onClick } =
-      this.props;
-    return (
-      <div>
-        <Statistics
-          onGood={onClick}
-          onNeutral={onClick}
-          onBad={onClick}
-          onClick={onClick}
-        />
-        <h2>Statistics</h2>
-        <ul>
-          <Li>Good: {good}</Li>
-          <Li>Neutra: {neutral}</Li>
-          <Li>Bad: {bad}</Li>
-          <Li>
-            Total:
-            {total}
-          </Li>
-          <li>Positive Feedback: {positivePercentage}%</li>
-        </ul>
-      </div>
-    );
-  }
-}
+import styles from "./FeedbackOptions.module.css";
+import PropTypes from "prop-types";
 
+const FeedbackOptions = ({ categories, onClickBtn }) => (
+  <div className={styles.wrap}>
+    {categories.map((category) => (
+      <button
+        key={category}
+        className={styles.btn}
+        type="button"
+        onClick={() => onClickBtn(category)}
+      >
+        {category}
+      </button>
+    ))}
+  </div>
+);
+FeedbackOptions.propType = {
+  categories: PropTypes.array.isRequired,
+  onClickBtn: PropTypes.func.isRequired,
+};
 export default FeedbackOptions;

@@ -12,7 +12,7 @@ import SelectsImg from "../SelectsImg/SelectsImg";
 
 const Selects = () => {
   return (
-    <div className={s.selects}>
+    <div name="views" className={s.selects}>
       <div className={s.container}>
         <SelectsImg bgImg={BoraBora} text="Bora Bora" />
         <SelectsImg bgImg={BoraBora2} text="Emerald Bay" />

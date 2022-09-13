@@ -1,0 +1,19 @@
+.container {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.carousel {
+  padding: 2rem 0;
+}
+
+.carousel img {
+  height: 90vh;
+  object-fit: cover;
+}
+
+.thumbsWrapper,
+.carouselStatus {
+  display: none;
+}

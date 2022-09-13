@@ -11,23 +11,38 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+import { Link } from "react-scroll";
+
 import s from "./NavBar.module.css";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const handelNav = () => setNav(!nav);
   return (
-    <div className={nav ? `${s.navbar} ${s.navbarBg} ` : `${s.navbar}`}>
+    <div
+      name="home"
+      className={nav ? `${s.navbar} ${s.navbarBg} ` : `${s.navbar}`}
+    >
       <div className={nav ? `${s.logo} ${s.dark}` : `${s.logo}`}>
         <h2>BEACHES</h2>
       </div>
 
       <ul className={s.navMenu}>
-        <li>Home</li>
-        <li>Destinations</li>
-        <li>Travel</li>
-        <li>Book</li>
-        <li>Views</li>
+        <Link to="home">
+          <li>Home</li>
+        </Link>
+        <Link to="destinations">
+          <li>Destinations</li>
+        </Link>
+        <Link to="carousel">
+          <li>Travel</li>
+        </Link>
+        <Link to="book">
+          <li>Book</li>
+        </Link>
+        <Link to="views">
+          <li>Views</li>
+        </Link>
       </ul>
       <div className={s.navIcons}>
         <BiSearch className={s.icon} style={{ marginRight: "16px" }} />

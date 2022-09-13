@@ -3,7 +3,7 @@ import s from "./Search.module.css";
 import Gold from "../../assets/gold.png";
 const Search = () => {
   return (
-    <div className={s.search}>
+    <div name="book" className={s.search}>
       <div className={s.container}>
         <div className={s.left}>
           <h2>LUXURY INCLUDED VACATIONS FOR TWO PEOPLE</h2>

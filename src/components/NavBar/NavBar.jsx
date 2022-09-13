@@ -18,7 +18,7 @@ const NavBar = () => {
   const handelNav = () => setNav(!nav);
   return (
     <div className={nav ? `${s.navbar} ${s.navbarBg} ` : `${s.navbar}`}>
-      <div className={s.logo}>
+      <div className={nav ? `${s.logo} ${s.dark}` : `${s.logo}`}>
         <h2>BEACHES</h2>
       </div>
 
@@ -30,12 +30,12 @@ const NavBar = () => {
         <li>Views</li>
       </ul>
       <div className={s.navIcons}>
-        <BiSearch className={s.icon} />
+        <BiSearch className={s.icon} style={{ marginRight: "16px" }} />
         <BsPerson className={s.icon} />
       </div>
       <div className={s.hamburger} onClick={handelNav}>
         {nav ? (
-          <AiOutlineClose className={s.icon} />
+          <AiOutlineClose style={{ color: "#000" }} className={s.icon} />
         ) : (
           <HiOutlineMenuAlt4 className={s.icon} />
         )}

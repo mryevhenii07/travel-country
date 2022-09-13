@@ -1,0 +1,17 @@
+.container {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.selects .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+@media screen and (max-width: 740px) {
+  .selects .container {
+    grid-template-columns: 1fr;
+  }
+}

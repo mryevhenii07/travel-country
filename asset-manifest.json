@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/travel-country/static/css/main.56fc164a.css",
-    "main.js": "/travel-country/static/js/main.423c8741.js",
+    "main.css": "/travel-country/static/css/main.da258606.css",
+    "main.js": "/travel-country/static/js/main.e84e0a67.js",
     "static/media/maldivesVideo.mp4": "/travel-country/static/media/maldivesVideo.4b1c6a6fb879322d6587.mp4",
     "static/media/keywest.jpg": "/travel-country/static/media/keywest.1e30514942c6f50bea09.jpg",
     "static/media/maldives2.jpg": "/travel-country/static/media/maldives2.ee088b6ef17100d7f85f.jpg",
@@ -11,11 +11,11 @@
     "static/media/maldives3.jpg": "/travel-country/static/media/maldives3.9c3058f9a039c5a102a8.jpg",
     "static/media/gold.png": "/travel-country/static/media/gold.42f7d8f40c346adfe3a7.png",
     "index.html": "/travel-country/index.html",
-    "main.56fc164a.css.map": "/travel-country/static/css/main.56fc164a.css.map",
-    "main.423c8741.js.map": "/travel-country/static/js/main.423c8741.js.map"
+    "main.da258606.css.map": "/travel-country/static/css/main.da258606.css.map",
+    "main.e84e0a67.js.map": "/travel-country/static/js/main.e84e0a67.js.map"
   },
   "entrypoints": [
-    "static/css/main.56fc164a.css",
-    "static/js/main.423c8741.js"
+    "static/css/main.da258606.css",
+    "static/js/main.e84e0a67.js"
   ]
 }
